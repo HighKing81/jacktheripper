@@ -1,0 +1,1 @@
+ACTION=="change", KERNEL=="sr[0-9]*", ENV{ID_CDROM_MEDIA_TRACK_COUNT_AUDIO}!="", ENV{ID_CDROM_MEDIA_TRACK_COUNT_AUDIO}!="0", RUN+="/usr/local/bin/jacktheripper.sh '%E{DEVNAME}'"
