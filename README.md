@@ -1,12 +1,12 @@
 # Jack the Ripper
 
-This is a set of scripts providing automatically ripping an audio CD
+This is a set of scripts providing automatically ripping of an audio CD
 and converting it to flac. The ripping and converting is done in seperate 
 scripts simply because my raspberry-pi with KODI was not up to the 
 FLAC converting task back in 2016 when I wrote this. So the converting
 script has been running on a seperate machine since.
 
-Files:
+##Files:
 * 999-jacktheripper.rules  : UDEV rules running jacktheripper.sh when an audio-cd is inserted
 * jacktheripper.sh         : The cd-ripping script
 * ripped2flac.sh           : The FLAC conversion script.
@@ -14,7 +14,7 @@ Files:
 
 This was written for personal use. Feel free to use whatever you need from it.
 
-Usage:
+##Usage:
   Put 999-jacktheripper.rules in your udev.d directory so udev will start jacktheripper.sh
   as soon as you insert a CD with audio tracks on it.
 
@@ -23,7 +23,7 @@ Usage:
   command to reschedule itself. This is a workaround against the time limit of UDEV.
   On my machine it mounts a samba share on /mnt/jacktheripper so make sure to change 
   the *CIFSUSER* and *CIFSPASSWORD* to your own if you plan to do the same, 
-  or change it... ;-) 
+  or delete the mount stuff and change the location... ;-) 
 
   The ripped2flac.sh you can place on the machine which will do the converting from
   wav to flac. This expects a file /home/public/jacktheripper.log which is created 
