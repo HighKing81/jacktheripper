@@ -6,7 +6,7 @@ scripts simply because my raspberry-pi with KODI was not up to the
 FLAC converting task back in 2016 when I wrote this. So the converting
 script has been running on a seperate machine since.
 
-##Files:
+## Files:
 * 999-jacktheripper.rules  : UDEV rules running jacktheripper.sh when an audio-cd is inserted
 * jacktheripper.sh         : The cd-ripping script
 * ripped2flac.sh           : The FLAC conversion script.
@@ -14,7 +14,7 @@ script has been running on a seperate machine since.
 
 This was written for personal use. Feel free to use whatever you need from it.
 
-##Usage:
+## Usage:
   Put 999-jacktheripper.rules in your udev.d directory so udev will start jacktheripper.sh
   as soon as you insert a CD with audio tracks on it.
 
