@@ -16,8 +16,7 @@ This was written for personal use. Feel free to use whatever you need from it.
 
 Usage:
   Put 999-jacktheripper.rules in your udev.d directory so udev will start jacktheripper.sh
-  as soon as you insert a CD. There's no "check if it's an audo-cd" logic in it so
-  feel free to change that if you need it.
+  as soon as you insert a CD with audio tracks on it.
 
   Put jacktheripper.sh in /usr/local/bin and make sure it's executable. This will handle
   the ripping. It needs icedax, which will do the actual ripping. It also needs the 'at'
